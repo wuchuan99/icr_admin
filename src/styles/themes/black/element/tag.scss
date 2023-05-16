@@ -1,0 +1,27 @@
+@import "../vars";
+
+body {
+  .el-tag {
+    display: inline-block;
+    height: 40px;
+    padding-right: 20px;
+    background-color: $--icr-color-input-primary;
+    border: none;
+    color: $--icr-color-text-primary;
+    line-height: 40px;
+    border-radius: 1px;
+    .el-tag__close {
+      height: 16px;
+      width: 16px;
+      background-color: rgba($--icr-bg-color-focus,0.5);
+      color: $--icr-bg-color-secondary;
+      right: -13px;
+      font-size: 16px;
+      font-weight: 700;
+      &:hover {
+        background-color: $--icr-bg-color-focus;
+        color: $--icr-bg-color-secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.topology-editor {
+  .x6-node {
+    cursor: grab;
+    .graph_node {
+      height: 100%;
+      display: flex;
+      flex-flow: wrap;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      i {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .graph_node_label {
+        color: rgba(255, 255, 255, 0.6);
+        word-break: keep-all;
+        margin-top: 5px;
+        text-align: center;
+      }
+      .node_label {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        text-align: center;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        pointer-events: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import "@/styles/themes/black/vars.scss";
+$--icr-collapse-color-border: rgba(224, 241, 255, 0.1);
+
+.topology-editor{
+  .el-collapse {
+    border-top: none;
+    border-bottom: 2px solid $--icr-collapse-color-border;
+    padding: 0 5px;
+
+    .el-collapse-item:nth-child(n + 2) {
+      border-top: 2px solid $--icr-collapse-color-border;
+    }
+
+    .el-collapse-item__header {
+      background-color: transparent;
+      border-bottom: none;
+      opacity: 0.6;
+      font-size: 14px;
+      // color: $--icr-color-text-regular;
+      height: 25px;
+      line-height: 25px;
+      // padding: 20px 0;
+      margin: 20px 0 15px 0;
+    }
+
+    .title {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .header-actions {
+      margin-right: 10px;
+    }
+
+    .el-collapse-item__header.focusing:focus:not(:hover) {
+      color: $--icr-color-text-regular;
+    }
+
+    .el-collapse-item__wrap {
+      background-color: transparent;
+      border-bottom: none;
+    }
+
+    .el-collapse-item__content {
+      padding-bottom: 20px;
+      color: $--icr-color-text-primary;
+    }
+
+    // collapse内表单
+    .el-form-item {
+      margin-bottom: 10px;
+    }
+
+    .el-form-item:last-child {
+      margin-bottom: 0;
+    }
+
+    //栅格左侧文字内容
+    .item-content {
+      line-height: 30px;
+      margin-bottom: 5px;
+
+      .el-button--text {
+        i {
+          color: $--icr-topology-color-hover;
+        }
+      }
+    }
+  }
+}

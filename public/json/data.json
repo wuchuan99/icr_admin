@@ -1,0 +1,1519 @@
+[
+  {
+    "id": 355,
+    "attrs": {
+      "ram": 2048,
+      "usb": [],
+      "disk": [
+        5
+      ],
+      "name": "\u53f0\u5f0f\u673a",
+      "nics": [
+        {
+          "id": "fe8bbd0f-f544-4d84-9ca0-ae51b493b661",
+          "mac": "DA:FD:E8:FA:25:9D",
+          "name": "sw-1",
+          "ip_info": {
+            "mask": "",
+            "gateway": "",
+            "ip_type": 0,
+            "ip_address": ""
+          },
+          "dns_info": {
+            "dns_type": 0,
+            "backup_DNS": "",
+            "prefer_DNS": ""
+          },
+          "subnet_id": "357",
+          "network_type": 1
+        }
+      ],
+      "vcpus": 1,
+      "system": {
+        "remote": {
+          "port": "",
+          "account": "",
+          "password": "",
+          "remote_type": "novnc"
+        },
+        "account_info": []
+      },
+      "image_info": {
+        "name": "ddd_\u53f0\u5f0f\u673a_20220808151322",
+        "classify": 2,
+        "image_id": "5955f105-06a1-4bac-87c6-629003bcb6e4",
+        "target_id": 3,
+        "target_name": "ddd_\u53f0\u5f0f\u673a_20220808151322",
+        "target_classify": ""
+      },
+      "ip_list": [
+        "192.168.3.20"
+      ],
+      "isLogin": true,
+      "loginInfo": {}
+    },
+    "illustration_info": {
+      "id": "ce8a14de-30b5-4730-92b0-67c9b73c5429",
+      "data": {
+        "id": 355,
+        "attrs": {
+          "ram": 2048,
+          "usb": [],
+          "disk": [
+            {
+              "name": "\u786c\u76d8",
+              "capacity": 5
+            }
+          ],
+          "name": "\u53f0\u5f0f\u673a",
+          "nics": [
+            {
+              "id": "fe8bbd0f-f544-4d84-9ca0-ae51b493b661",
+              "mac": "DA:FD:E8:FA:25:9D",
+              "name": "sw-1",
+              "ip_info": {
+                "mask": "",
+                "gateway": "",
+                "ip_type": 0,
+                "ip_address": ""
+              },
+              "dns_info": {
+                "dns_type": 0,
+                "backup_DNS": "",
+                "prefer_DNS": ""
+              },
+              "subnet_id": 357,
+              "network_type": 1
+            }
+          ],
+          "vcpus": 1,
+          "system": {
+            "remote": {
+              "port": "",
+              "account": "",
+              "password": "",
+              "remote_type": "novnc"
+            },
+            "account_info": []
+          },
+          "ip_list": [],
+          "image_info": {
+            "name": "dongdongdong",
+            "classify": 2,
+            "image_id": "3915912e-3b5a-4f03-9ff7-0346a511c915",
+            "target_id": 3,
+            "target_name": "dongdongdong",
+            "target_classify": ""
+          }
+        },
+        "connections": [
+          {
+            "id": "73943936-f00b-4940-8c9d-32c820298e85",
+            "dev_id": 360,
+            "self_id": 355,
+            "dev_eth_id": "d4687fe8-d6c1-4a9b-97a9-da315b66c989",
+            "self_eth_id": "fe8bbd0f-f544-4d84-9ca0-ae51b493b661"
+          }
+        ],
+        "styleObject": {
+          "color": "rgba(255, 255, 255, 1)",
+          "fontSize": "50px"
+        },
+        "relevanceFlag": true
+      },
+      "size": {
+        "width": 50,
+        "height": 50
+      },
+      "view": "vue-shape-view",
+      "ports": {
+        "items": [
+          {
+            "id": "port1",
+            "group": "top"
+          },
+          {
+            "id": "port2",
+            "group": "right"
+          },
+          {
+            "id": "port3",
+            "group": "bottom"
+          },
+          {
+            "id": "port4",
+            "group": "left"
+          }
+        ],
+        "groups": {
+          "top": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "top"
+          },
+          "left": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "left"
+          },
+          "right": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "right"
+          },
+          "bottom": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "bottom"
+          }
+        }
+      },
+      "shape": "vue-shape",
+      "zIndex": 1,
+      "position": {
+        "x": -440,
+        "y": 80
+      },
+      "component": "desktop"
+    },
+    "dev_type": "pc"
+  },
+  {
+    "id": 356,
+    "attrs": {
+      "ram": 2048,
+      "usb": [],
+      "disk": [
+        5
+      ],
+      "name": "\u7b14\u8bb0\u672c",
+      "nics": [
+        {
+          "id": "6ced2d58-93fb-4c94-8b5a-ed57b1b8f4c8",
+          "mac": "08:40:0E:70:DC:06",
+          "name": "sw-2",
+          "ip_info": {
+            "mask": "",
+            "gateway": "",
+            "ip_type": 0,
+            "ip_address": ""
+          },
+          "dns_info": {
+            "dns_type": 0,
+            "backup_DNS": "",
+            "prefer_DNS": ""
+          },
+          "subnet_id": "358",
+          "network_type": 1
+        }
+      ],
+      "vcpus": 1,
+      "system": {
+        "remote": {
+          "port": "",
+          "account": "",
+          "password": "",
+          "remote_type": "novnc"
+        },
+        "account_info": []
+      },
+      "image_info": {
+        "name": "ddd_\u7b14\u8bb0\u672c_20220808151322",
+        "classify": 2,
+        "image_id": "d47378fe-a7aa-4996-8a7f-421129478918",
+        "target_id": 3,
+        "target_name": "dongdongdong",
+        "target_classify": ""
+      },
+      "ip_list": [
+        "192.168.25.30"
+      ],
+      "isLogin": true,
+      "loginInfo": {}
+    },
+    "illustration_info": {
+      "id": "ba691d44-7efe-4105-9fa4-21b06dcbfc6e",
+      "data": {
+        "id": 356,
+        "attrs": {
+          "ram": 2048,
+          "usb": [],
+          "disk": [
+            {
+              "name": "\u786c\u76d8",
+              "capacity": 5
+            }
+          ],
+          "name": "\u7b14\u8bb0\u672c",
+          "nics": [
+            {
+              "id": "6ced2d58-93fb-4c94-8b5a-ed57b1b8f4c8",
+              "mac": "08:40:0E:70:DC:06",
+              "name": "sw-2",
+              "ip_info": {
+                "mask": "",
+                "gateway": "",
+                "ip_type": 0,
+                "ip_address": ""
+              },
+              "dns_info": {
+                "dns_type": 0,
+                "backup_DNS": "",
+                "prefer_DNS": ""
+              },
+              "subnet_id": 358,
+              "network_type": 1
+            }
+          ],
+          "vcpus": 1,
+          "system": {
+            "remote": {
+              "port": "",
+              "account": "",
+              "password": "",
+              "remote_type": "novnc"
+            },
+            "account_info": []
+          },
+          "ip_list": [],
+          "image_info": {
+            "name": "ddd_\u7b14\u8bb0\u672c_20220808151322",
+            "classify": 2,
+            "image_id": "d47378fe-a7aa-4996-8a7f-421129478918",
+            "target_id": 3,
+            "target_name": "dongdongdong",
+            "target_classify": ""
+          }
+        },
+        "connections": [
+          {
+            "id": "1bba9223-06c8-427a-a577-ee5ac4d72705",
+            "dev_id": 361,
+            "self_id": 356,
+            "dev_eth_id": "42737abc-7b3d-4d5d-85d8-fad7aa248867",
+            "self_eth_id": "6ced2d58-93fb-4c94-8b5a-ed57b1b8f4c8"
+          }
+        ],
+        "styleObject": {
+          "color": "rgba(255, 255, 255, 1)",
+          "fontSize": "50px"
+        },
+        "relevanceFlag": true
+      },
+      "size": {
+        "width": 50,
+        "height": 50
+      },
+      "view": "vue-shape-view",
+      "ports": {
+        "items": [
+          {
+            "id": "port1",
+            "group": "top"
+          },
+          {
+            "id": "port2",
+            "group": "right"
+          },
+          {
+            "id": "port3",
+            "group": "bottom"
+          },
+          {
+            "id": "port4",
+            "group": "left"
+          }
+        ],
+        "groups": {
+          "top": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "top"
+          },
+          "left": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "left"
+          },
+          "right": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "right"
+          },
+          "bottom": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "bottom"
+          }
+        }
+      },
+      "shape": "vue-shape",
+      "zIndex": 2,
+      "position": {
+        "x": -4,
+        "y": 90
+      },
+      "component": "laptop"
+    },
+    "dev_type": "pc"
+  },
+  {
+    "id": 357,
+    "attrs": {
+      "vid": 10,
+      "name": "10",
+      "sub_mask": "255.255.255.0",
+      "subnet_ip": "192.168.10.0",
+      "gateway_ip": "192.168.10.1",
+      "enable_dhcp": true,
+      "allocation_pools": {
+        "end": "",
+        "start": ""
+      }
+    },
+    "illustration_info": {},
+    "dev_type": "subnet"
+  },
+  {
+    "id": 358,
+    "attrs": {
+      "vid": 20,
+      "name": "20",
+      "sub_mask": "255.255.255.0",
+      "subnet_ip": "192.168.20.0",
+      "gateway_ip": "192.168.20.1",
+      "enable_dhcp": true,
+      "allocation_pools": {
+        "end": "",
+        "start": ""
+      }
+    },
+    "illustration_info": {},
+    "dev_type": "subnet"
+  },
+  {
+    "id": 359,
+    "attrs": {
+      "inf": [
+        {
+          "id": "16b1055c-cffb-4958-a0b4-ff3aef1860a9",
+          "ip": "192.168.10.1",
+          "eth_name": "sw-1",
+          "subnet_id": 357
+        },
+        {
+          "id": "119de022-1064-48e5-ba8a-fbb1adbb16ae",
+          "ip": "192.168.20.1",
+          "eth_name": "sw-2",
+          "subnet_id": 358
+        }
+      ],
+      "port_mappings": [],
+      "static_routes": []
+    },
+    "illustration_info": {
+      "id": "4d268dd3-111e-47df-8b7b-e95fbcfa667c",
+      "data": {
+        "id": 359,
+        "attrs": {
+          "inf": [
+            {
+              "id": "16b1055c-cffb-4958-a0b4-ff3aef1860a9",
+              "ip": "192.168.10.1",
+              "eth_name": "sw-1",
+              "subnet_id": 357
+            },
+            {
+              "id": "119de022-1064-48e5-ba8a-fbb1adbb16ae",
+              "ip": "192.168.20.1",
+              "eth_name": "sw-2",
+              "subnet_id": 358
+            }
+          ],
+          "name": "\u8def\u7531\u5668",
+          "port_mappings": [],
+          "static_routes": []
+        },
+        "connections": [
+          {
+            "id": "c5e6cec4-aa7e-43c4-98d2-53be007b72bf",
+            "dev_id": 360,
+            "self_id": 359,
+            "dev_eth_id": "2c8cf5a2-cf18-46e0-9645-caee2037fa5c",
+            "self_eth_id": "16b1055c-cffb-4958-a0b4-ff3aef1860a9"
+          },
+          {
+            "id": "8a3323a8-6ff3-48bb-be63-fa924690d06b",
+            "dev_id": 361,
+            "self_id": 359,
+            "dev_eth_id": "00313131-3e4a-477d-bcb3-26ae111ecd1e",
+            "self_eth_id": "119de022-1064-48e5-ba8a-fbb1adbb16ae"
+          }
+        ],
+        "styleObject": {
+          "color": "rgba(255, 255, 255, 1)",
+          "fontSize": "50px"
+        },
+        "relevanceFlag": true
+      },
+      "size": {
+        "width": 50,
+        "height": 50
+      },
+      "view": "vue-shape-view",
+      "ports": {
+        "items": [
+          {
+            "id": "port1",
+            "group": "top"
+          },
+          {
+            "id": "port2",
+            "group": "right"
+          },
+          {
+            "id": "port3",
+            "group": "bottom"
+          },
+          {
+            "id": "port4",
+            "group": "left"
+          }
+        ],
+        "groups": {
+          "top": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "top"
+          },
+          "left": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "left"
+          },
+          "right": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "right"
+          },
+          "bottom": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "bottom"
+          }
+        }
+      },
+      "shape": "vue-shape",
+      "zIndex": 3,
+      "position": {
+        "x": -210,
+        "y": -250
+      },
+      "component": "NetRouter"
+    },
+    "dev_type": "router"
+  },
+  {
+    "id": 360,
+    "attrs": {
+      "dev_name": "\u4e8c\u5c42\u4ea4\u6362\u673a",
+      "port_info": [
+        {
+          "id": "2c8cf5a2-cf18-46e0-9645-caee2037fa5c",
+          "vni_type": "1",
+          "port_mode": "access",
+          "port_name": "r-1",
+          "subnet_id": 357,
+          "attach_dev_info": {
+            "dev_id": 359,
+            "dev_eth_id": "16b1055c-cffb-4958-a0b4-ff3aef1860a9"
+          }
+        },
+        {
+          "id": "d4687fe8-d6c1-4a9b-97a9-da315b66c989",
+          "vni_type": "1",
+          "port_mode": "access",
+          "port_name": "pc-1",
+          "subnet_id": 357,
+          "attach_dev_info": {
+            "dev_id": 355,
+            "dev_eth_id": "fe8bbd0f-f544-4d84-9ca0-ae51b493b661"
+          }
+        }
+      ]
+    },
+    "illustration_info": {
+      "id": "22ebebab-e810-490e-941d-104e01cb5f2e",
+      "data": {
+        "id": 360,
+        "attrs": {
+          "name": "\u4e8c\u5c42\u4ea4\u6362\u673a",
+          "port_info": [
+            {
+              "id": "2c8cf5a2-cf18-46e0-9645-caee2037fa5c",
+              "vni_type": "1",
+              "port_mode": "access",
+              "port_name": "r-1",
+              "subnet_id": 357
+            },
+            {
+              "id": "d4687fe8-d6c1-4a9b-97a9-da315b66c989",
+              "vni_type": "1",
+              "port_mode": "access",
+              "port_name": "pc-1",
+              "subnet_id": 357
+            }
+          ]
+        },
+        "dev_type": "",
+        "connections": [
+          {
+            "id": "c5e6cec4-aa7e-43c4-98d2-53be007b72bf",
+            "dev_id": 359,
+            "self_id": 360,
+            "dev_eth_id": "16b1055c-cffb-4958-a0b4-ff3aef1860a9",
+            "self_eth_id": "2c8cf5a2-cf18-46e0-9645-caee2037fa5c"
+          },
+          {
+            "id": "73943936-f00b-4940-8c9d-32c820298e85",
+            "dev_id": 355,
+            "self_id": 360,
+            "dev_eth_id": "fe8bbd0f-f544-4d84-9ca0-ae51b493b661",
+            "self_eth_id": "d4687fe8-d6c1-4a9b-97a9-da315b66c989"
+          }
+        ],
+        "styleObject": {
+          "color": "rgba(255, 255, 255, 1)",
+          "fontSize": "50px"
+        },
+        "relevanceFlag": true
+      },
+      "size": {
+        "width": 50,
+        "height": 50
+      },
+      "view": "vue-shape-view",
+      "ports": {
+        "items": [
+          {
+            "id": "port1",
+            "group": "top"
+          },
+          {
+            "id": "port2",
+            "group": "right"
+          },
+          {
+            "id": "port3",
+            "group": "bottom"
+          },
+          {
+            "id": "port4",
+            "group": "left"
+          }
+        ],
+        "groups": {
+          "top": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "top"
+          },
+          "left": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "left"
+          },
+          "right": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "right"
+          },
+          "bottom": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "bottom"
+          }
+        }
+      },
+      "shape": "vue-shape",
+      "zIndex": 4,
+      "position": {
+        "x": -440,
+        "y": -130
+      },
+      "component": "Layer2Switch"
+    },
+    "dev_type": "switch"
+  },
+  {
+    "id": 361,
+    "attrs": {
+      "dev_name": "\u4e8c\u5c42\u4ea4\u6362\u673a",
+      "port_info": [
+        {
+          "id": "00313131-3e4a-477d-bcb3-26ae111ecd1e",
+          "vni_type": "1",
+          "port_mode": "access",
+          "port_name": "r-1",
+          "subnet_id": 358,
+          "attach_dev_info": {
+            "dev_id": 359,
+            "dev_eth_id": "119de022-1064-48e5-ba8a-fbb1adbb16ae"
+          }
+        },
+        {
+          "id": "42737abc-7b3d-4d5d-85d8-fad7aa248867",
+          "vni_type": "1",
+          "port_mode": "access",
+          "port_name": "pc-2",
+          "subnet_id": 358,
+          "attach_dev_info": {
+            "dev_id": 356,
+            "dev_eth_id": "6ced2d58-93fb-4c94-8b5a-ed57b1b8f4c8"
+          }
+        }
+      ]
+    },
+    "illustration_info": {
+      "id": "44bc4fe1-eeb1-4218-b403-293cfbad750c",
+      "data": {
+        "id": 361,
+        "attrs": {
+          "name": "\u4e8c\u5c42\u4ea4\u6362\u673a",
+          "port_info": [
+            {
+              "id": "00313131-3e4a-477d-bcb3-26ae111ecd1e",
+              "vni_type": "1",
+              "port_mode": "access",
+              "port_name": "r-1",
+              "subnet_id": 358
+            },
+            {
+              "id": "42737abc-7b3d-4d5d-85d8-fad7aa248867",
+              "vni_type": "1",
+              "port_mode": "access",
+              "port_name": "pc-2",
+              "subnet_id": 358
+            }
+          ]
+        },
+        "dev_type": "",
+        "connections": [
+          {
+            "id": "8a3323a8-6ff3-48bb-be63-fa924690d06b",
+            "dev_id": 359,
+            "self_id": 361,
+            "dev_eth_id": "119de022-1064-48e5-ba8a-fbb1adbb16ae",
+            "self_eth_id": "00313131-3e4a-477d-bcb3-26ae111ecd1e"
+          },
+          {
+            "id": "1bba9223-06c8-427a-a577-ee5ac4d72705",
+            "dev_id": 356,
+            "self_id": 361,
+            "dev_eth_id": "6ced2d58-93fb-4c94-8b5a-ed57b1b8f4c8",
+            "self_eth_id": "42737abc-7b3d-4d5d-85d8-fad7aa248867"
+          }
+        ],
+        "styleObject": {
+          "color": "rgba(255, 255, 255, 1)",
+          "fontSize": "50px"
+        },
+        "relevanceFlag": true
+      },
+      "size": {
+        "width": 50,
+        "height": 50
+      },
+      "view": "vue-shape-view",
+      "ports": {
+        "items": [
+          {
+            "id": "port1",
+            "group": "top"
+          },
+          {
+            "id": "port2",
+            "group": "right"
+          },
+          {
+            "id": "port3",
+            "group": "bottom"
+          },
+          {
+            "id": "port4",
+            "group": "left"
+          }
+        ],
+        "groups": {
+          "top": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "top"
+          },
+          "left": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "left"
+          },
+          "right": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "right"
+          },
+          "bottom": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "bottom"
+          }
+        }
+      },
+      "shape": "vue-shape",
+      "zIndex": 5,
+      "position": {
+        "x": -4,
+        "y": -130
+      },
+      "component": "Layer2Switch"
+    },
+    "dev_type": "switch"
+  },
+  {
+    "id": 362,
+    "attrs": {
+      "to": 360,
+      "from": 359,
+      "delay": 0,
+      "to_index": "2c8cf5a2-cf18-46e0-9645-caee2037fa5c",
+      "from_index": "16b1055c-cffb-4958-a0b4-ff3aef1860a9",
+      "speed_limit": 0,
+      "package_loss": 0
+    },
+    "illustration_info": {
+      "id": "c5e6cec4-aa7e-43c4-98d2-53be007b72bf",
+      "data": {
+        "id": 362,
+        "attrs": {
+          "to": 360,
+          "from": 359,
+          "name": "\u8fde\u63a5\u7ebf",
+          "delay": 0,
+          "to_index": "2c8cf5a2-cf18-46e0-9645-caee2037fa5c",
+          "from_index": "16b1055c-cffb-4958-a0b4-ff3aef1860a9",
+          "speed_limit": 0,
+          "package_loss": 0
+        },
+        "source": {
+          "id": 359,
+          "nodeId": "4d268dd3-111e-47df-8b7b-e95fbcfa667c",
+          "component": "NetRouter"
+        },
+        "target": {
+          "id": 360,
+          "nodeId": "22ebebab-e810-490e-941d-104e01cb5f2e",
+          "component": "Layer2Switch"
+        }
+      },
+      "attrs": {
+        "line": {
+          "stroke": "#25eeca",
+          "targetMarker": null
+        }
+      },
+      "shape": "Cable",
+      "markup": [
+        {
+          "attrs": {
+            "fill": "none",
+            "cursor": "pointer",
+            "stroke": "transparent",
+            "strokeLinecap": "butt"
+          },
+          "tagName": "path",
+          "selector": "wrap",
+          "groupSelector": "lines"
+        },
+        {
+          "attrs": {
+            "fill": "none",
+            "pointerEvents": "none"
+          },
+          "tagName": "path",
+          "selector": "line",
+          "groupSelector": "lines"
+        }
+      ],
+      "router": {
+        "args": {
+          "padding": 1
+        },
+        "name": "manhattan"
+      },
+      "source": {
+        "cell": "4d268dd3-111e-47df-8b7b-e95fbcfa667c",
+        "port": "port4"
+      },
+      "target": {
+        "cell": "22ebebab-e810-490e-941d-104e01cb5f2e",
+        "port": "port1"
+      },
+      "zIndex": 0,
+      "connector": {
+        "name": "rounded"
+      }
+    },
+    "dev_type": "cable"
+  },
+  {
+    "id": 363,
+    "attrs": {
+      "to": 361,
+      "from": 359,
+      "delay": 0,
+      "to_index": "00313131-3e4a-477d-bcb3-26ae111ecd1e",
+      "from_index": "119de022-1064-48e5-ba8a-fbb1adbb16ae",
+      "speed_limit": 0,
+      "package_loss": 0
+    },
+    "illustration_info": {
+      "id": "8a3323a8-6ff3-48bb-be63-fa924690d06b",
+      "data": {
+        "id": 363,
+        "attrs": {
+          "to": 361,
+          "from": 359,
+          "name": "\u8fde\u63a5\u7ebf",
+          "delay": 0,
+          "to_index": "00313131-3e4a-477d-bcb3-26ae111ecd1e",
+          "from_index": "119de022-1064-48e5-ba8a-fbb1adbb16ae",
+          "speed_limit": 0,
+          "package_loss": 0
+        },
+        "source": {
+          "id": 359,
+          "nodeId": "4d268dd3-111e-47df-8b7b-e95fbcfa667c",
+          "component": "NetRouter"
+        },
+        "target": {
+          "id": 361,
+          "nodeId": "44bc4fe1-eeb1-4218-b403-293cfbad750c",
+          "component": "Layer2Switch"
+        }
+      },
+      "attrs": {
+        "line": {
+          "stroke": "#25eeca",
+          "targetMarker": null
+        }
+      },
+      "shape": "Cable",
+      "markup": [
+        {
+          "attrs": {
+            "fill": "none",
+            "cursor": "pointer",
+            "stroke": "transparent",
+            "strokeLinecap": "butt"
+          },
+          "tagName": "path",
+          "selector": "wrap",
+          "groupSelector": "lines"
+        },
+        {
+          "attrs": {
+            "fill": "none",
+            "pointerEvents": "none"
+          },
+          "tagName": "path",
+          "selector": "line",
+          "groupSelector": "lines"
+        }
+      ],
+      "router": {
+        "args": {
+          "padding": 1
+        },
+        "name": "manhattan"
+      },
+      "source": {
+        "cell": "4d268dd3-111e-47df-8b7b-e95fbcfa667c",
+        "port": "port2"
+      },
+      "target": {
+        "cell": "44bc4fe1-eeb1-4218-b403-293cfbad750c",
+        "port": "port1"
+      },
+      "zIndex": 0,
+      "connector": {
+        "name": "rounded"
+      }
+    },
+    "dev_type": "cable"
+  },
+  {
+    "id": 364,
+    "attrs": {
+      "to": 361,
+      "from": 356,
+      "delay": 0,
+      "to_index": "42737abc-7b3d-4d5d-85d8-fad7aa248867",
+      "from_index": "6ced2d58-93fb-4c94-8b5a-ed57b1b8f4c8",
+      "speed_limit": 0,
+      "package_loss": 0
+    },
+    "illustration_info": {
+      "id": "1bba9223-06c8-427a-a577-ee5ac4d72705",
+      "data": {
+        "id": 364,
+        "attrs": {
+          "to": 361,
+          "from": 356,
+          "name": "\u8fde\u63a5\u7ebf",
+          "delay": 0,
+          "to_index": "42737abc-7b3d-4d5d-85d8-fad7aa248867",
+          "from_index": "6ced2d58-93fb-4c94-8b5a-ed57b1b8f4c8",
+          "speed_limit": 0,
+          "package_loss": 0
+        },
+        "source": {
+          "id": 356,
+          "nodeId": "ba691d44-7efe-4105-9fa4-21b06dcbfc6e",
+          "component": "laptop"
+        },
+        "target": {
+          "id": 361,
+          "nodeId": "44bc4fe1-eeb1-4218-b403-293cfbad750c",
+          "component": "Layer2Switch"
+        }
+      },
+      "attrs": {
+        "line": {
+          "stroke": "#25eeca",
+          "targetMarker": null
+        }
+      },
+      "shape": "Cable",
+      "markup": [
+        {
+          "attrs": {
+            "fill": "none",
+            "cursor": "pointer",
+            "stroke": "transparent",
+            "strokeLinecap": "butt"
+          },
+          "tagName": "path",
+          "selector": "wrap",
+          "groupSelector": "lines"
+        },
+        {
+          "attrs": {
+            "fill": "none",
+            "pointerEvents": "none"
+          },
+          "tagName": "path",
+          "selector": "line",
+          "groupSelector": "lines"
+        }
+      ],
+      "router": {
+        "args": {
+          "padding": 1
+        },
+        "name": "manhattan"
+      },
+      "source": {
+        "cell": "ba691d44-7efe-4105-9fa4-21b06dcbfc6e",
+        "port": "port1"
+      },
+      "target": {
+        "cell": "44bc4fe1-eeb1-4218-b403-293cfbad750c",
+        "port": "port3"
+      },
+      "zIndex": 0,
+      "connector": {
+        "name": "rounded"
+      }
+    },
+    "dev_type": "cable"
+  },
+  {
+    "id": 365,
+    "attrs": {
+      "to": 355,
+      "from": 360,
+      "delay": 0,
+      "to_index": "fe8bbd0f-f544-4d84-9ca0-ae51b493b661",
+      "from_index": "d4687fe8-d6c1-4a9b-97a9-da315b66c989",
+      "speed_limit": 0,
+      "package_loss": 0
+    },
+    "illustration_info": {
+      "id": "73943936-f00b-4940-8c9d-32c820298e85",
+      "data": {
+        "id": 365,
+        "attrs": {
+          "to": 355,
+          "from": 360,
+          "name": "\u8fde\u63a5\u7ebf",
+          "delay": 0,
+          "to_index": "fe8bbd0f-f544-4d84-9ca0-ae51b493b661",
+          "from_index": "d4687fe8-d6c1-4a9b-97a9-da315b66c989",
+          "speed_limit": 0,
+          "package_loss": 0
+        },
+        "source": {
+          "id": 360,
+          "nodeId": "22ebebab-e810-490e-941d-104e01cb5f2e",
+          "component": "Layer2Switch"
+        },
+        "target": {
+          "id": 355,
+          "nodeId": "ce8a14de-30b5-4730-92b0-67c9b73c5429",
+          "component": "desktop"
+        }
+      },
+      "attrs": {
+        "line": {
+          "stroke": "#25eeca",
+          "targetMarker": null
+        }
+      },
+      "shape": "Cable",
+      "markup": [
+        {
+          "attrs": {
+            "fill": "none",
+            "cursor": "pointer",
+            "stroke": "transparent",
+            "strokeLinecap": "butt"
+          },
+          "tagName": "path",
+          "selector": "wrap",
+          "groupSelector": "lines"
+        },
+        {
+          "attrs": {
+            "fill": "none",
+            "pointerEvents": "none"
+          },
+          "tagName": "path",
+          "selector": "line",
+          "groupSelector": "lines"
+        }
+      ],
+      "router": {
+        "args": {
+          "padding": 1
+        },
+        "name": "manhattan"
+      },
+      "source": {
+        "cell": "22ebebab-e810-490e-941d-104e01cb5f2e",
+        "port": "port3"
+      },
+      "target": {
+        "cell": "ce8a14de-30b5-4730-92b0-67c9b73c5429",
+        "port": "port1"
+      },
+      "zIndex": 0,
+      "connector": {
+        "name": "rounded"
+      }
+    },
+    "dev_type": "cable"
+  },
+  {
+    "id": 366,
+    "attrs": {},
+    "illustration_info": {
+      "id": "bdca8b05-81da-43d4-8455-31df0209289a",
+      "data": {
+        "id": 366,
+        "attrs": {
+          "name": "\u77e9\u5f62"
+        },
+        "connections": [],
+        "styleObject": {
+          "color": "rgba(255, 255, 255, 1)",
+          "fontSize": "480px"
+        },
+        "relevanceFlag": false
+      },
+      "size": {
+        "width": 530,
+        "height": 480
+      },
+      "view": "vue-shape-view",
+      "ports": {
+        "items": [],
+        "groups": {
+          "top": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "top"
+          },
+          "left": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "left"
+          },
+          "right": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "right"
+          },
+          "bottom": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "bottom"
+          }
+        }
+      },
+      "shape": "vue-shape",
+      "zIndex": -10,
+      "position": {
+        "x": -460,
+        "y": -290
+      },
+      "component": "RectBlock"
+    },
+    "dev_type": "rectangle"
+  },
+  {
+    "id": 367,
+    "attrs": {},
+    "illustration_info": {
+      "id": "f29c2caf-cc9c-487a-9205-b7deaa0da93d",
+      "data": {
+        "id": 367,
+        "text": "\u8fd9\u662f\u4e00\u4e2a\u7f51\u7edc\u73af\u5883",
+        "attrs": {
+          "name": "\u6587\u672c"
+        },
+        "connections": [],
+        "styleObject": {
+          "color": "rgba(255, 255, 255, 1)",
+          "fontSize": "30px"
+        },
+        "relevanceFlag": true
+      },
+      "size": {
+        "width": 120,
+        "height": 30
+      },
+      "view": "vue-shape-view",
+      "ports": {
+        "items": [],
+        "groups": {
+          "top": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "top"
+          },
+          "left": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "left"
+          },
+          "right": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "right"
+          },
+          "bottom": {
+            "attrs": {
+              "circle": {
+                "r": 4,
+                "fill": "#fff",
+                "style": {
+                  "visibility": "hidden"
+                },
+                "magnet": true,
+                "stroke": "#25eeca",
+                "strokeWidth": 1
+              }
+            },
+            "position": "bottom"
+          }
+        }
+      },
+      "shape": "vue-shape",
+      "zIndex": 6,
+      "position": {
+        "x": -252,
+        "y": 118
+      },
+      "component": "TextBlock"
+    },
+    "dev_type": "text"
+  }
+]

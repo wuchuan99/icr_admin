@@ -1,0 +1,6 @@
+@import "../vars";
+@import "./button-mixin.scss";
+
+.app-main {
+  @include icr-button;
+}

@@ -1,0 +1,13 @@
+@import "../vars";
+
+.app-main {
+  .el-radio__inner {
+    background-color: transparent;
+    border: 2px solid rgba($--icr-color-text-primary,0.2);
+  }
+
+  .el-radio__input.is-disabled .el-radio__inner {
+    background-color: rgba($--icr-color-text-primary,0.1);
+    border-color: rgba($--icr-color-text-primary,0.2);
+  }
+}

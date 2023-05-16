@@ -1,0 +1,47 @@
+@import "../vars";
+$--dropdown--divider:#595B5C;
+
+body {
+  .el-dropdown-menu {
+    background-color: $--icr-color-dropdown-primary;
+    border-color: $--icr-color-dropdown-primary;
+    .el-dropdown-menu__item--divided {
+      border-color: $--dropdown--divider;
+      &:before {
+        background-color:  $--icr-color-dropdown-primary;
+      }
+    }
+    .el-dropdown-menu__item:not(.is-disabled):hover,
+    .el-dropdown-menu__item:focus {
+      background-color: $--icr-color-input-primary;
+      color: $--icr-color-text-primary;
+    }
+  }
+
+  // navBar用户下拉框
+  .user-dropdown.el-dropdown-menu {
+    background-color: $--icr-color-dropdown-primary;
+    border-color: $--dropdown--divider;
+    .el-dropdown-menu__item--divided {
+      border-color: $--dropdown--divider;
+      &:before {
+        background-color: $--icr-color-dropdown-primary;
+      }
+    }
+    .el-dropdown-menu__item {
+        color:$--color-danger;
+        &:hover {
+          color:$--color-danger;
+        }
+    }
+  }
+
+  .user-dropdown.el-popper[x-placement^="bottom"] {
+    .popper__arrow {
+      border-bottom-color: $--dropdown--divider;
+      &:after {
+        border-bottom-color: $--icr-color-dropdown-primary;
+      }
+    }
+  }
+}

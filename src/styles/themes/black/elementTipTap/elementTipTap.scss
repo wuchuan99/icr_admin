@@ -1,0 +1,198 @@
+@import './_variables';
+@import "../element/button-mixin.scss";
+@import "../element/input-mixin.scss";
+
+.el-tiptap-editor__content blockquote{
+  color:#999; //引用
+}
+.el-tiptap-editor__content td.selectedCell, .el-tiptap-editor__content th.selectedCell{
+  background-color: $hover-color;
+}
+.el-tiptap-editor__menu-bar {
+  background-color: $page-back-color;
+  border: 1px solid $border-color;
+  border-bottom: none;
+}
+
+.el-dropdown {
+  color: $text-color;
+}
+
+.el-tooltip.el-tiptap-editor__command-button > svg {
+  color: $text-color;
+}
+.el-tooltip.el-tiptap-editor__command-button > i {
+  color: $text-color;
+}
+
+.el-tiptap-editor > .el-tiptap-editor__content {
+  background-color: $page-back-color;
+  border: 1px solid $border-color;
+  border-top:none;
+  color: $text-color;
+}
+.el-tiptap-editor__menu-bar:before {
+  background-color: $hover-color;
+}
+.el-tiptap-editor__footer {
+  background-color: $page-back-color;
+  color: $text-color;
+  border: 1px solid $border-color;
+}
+
+.el-tiptap-editor__command-button--active {
+  background-color: $hover-color;
+  border: 1px solid $border-color;
+}
+
+.el-tiptap-editor__command-button:hover {
+  background-color: $hover-color;
+  border: 1px solid $border-color;
+}
+
+.el-dropdown-menu {
+  background-color: $page-back-color;
+  color: $text-color;
+  border: 1px solid $border-color;
+}
+.el-tiptap-dropdown-menu .el-tiptap-dropdown-menu__item--active {
+  background-color: $hover-color;
+  color: $text-color;
+}
+.el-tiptap-dropdown-menu .el-tiptap-dropdown-menu__item {
+  color: $text-color;
+  &:hover {
+    background-color: $hover-color;
+    color: $text-color;
+  }
+}
+
+.el-dialog.el-tiptap-edit-link-dialog {
+  min-width: 175px;
+}
+
+.el-tiptap-editor__menu-bubble {
+  background-color: $hover-color;
+  color: $text-color;
+}
+
+.el-dialog {
+  background: $back-color;
+}
+.el-dialog__title,
+.el-form-item__label {
+  color: $text-color;
+}
+.el-button.el-button--primary {
+  $color: $text-color !important;
+  $background-color: $primary-color !important;
+}
+.el-button.el-button--primary.el-button--small.is-round {
+  $color: $text-color !important;
+  $background-color: $primary-color !important;
+}
+.el-input > input {
+  background: $page-back-color;
+  $color: $text-color;
+  border: 1px solid $border-color;
+  &:focus {
+    border: 1px solid $border-color;
+  }
+}
+.el-input__inner {
+  $color: $text-color;
+}
+.el-button {
+  border: 1px solid $border-color;
+  color: $text-color;
+  background: $primary-color;
+  &:hover {
+    background: $primary-color;
+  }
+}
+
+.el-checkbox__label {
+  color: $text-color;
+}
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: $text-color;
+}
+.el-checkbox__inner {
+  color: $primary-color;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  color: $primary-color;
+}
+.el-popover {
+  background: $back-color;
+  border: 1px solid $border-color;
+  color: $text-color;
+}
+.el-popper[x-placement^='bottom'] .popper__arrow {
+  border-bottom-color: $border-color;
+}
+
+.el-tiptap-editor__content > div {
+  height: 100%;
+}
+
+.el-tiptap-popper__menu__item {
+  color: $text-color;
+}
+.el-tiptap-popper__menu__item__separator {
+  border-top: 1px solid $border-color;
+}
+
+.table-grid-size-editor__cell {
+  background: $back-color;
+}
+.table-grid-size-editor__cell--selected .table-grid-size-editor__cell__inner {
+  background-color: #ecf5ff;
+  border-color: #409eff;
+}
+
+.el-popper.el-tiptap-image-popper {
+  background: $back-color;
+}
+
+.el-tiptap-editor__content .image-resizer__handler {
+  background-color: $primary-color;
+}
+.el-tiptap-editor__content .image-resizer {
+  border-color: $primary-color;
+}
+.el-input.is-disabled .el-input__inner {
+  background-color: $page-back-color;
+  border-color: $border-color;
+}
+
+// Codemirror Style overrides
+// Code-view left number bar
+.CodeMirror-gutters {
+  background-color: $page-back-color;
+  border-right: 1px solid $border-color;
+}
+.CodeMirror-linenumber {
+  color: $text-color;
+}
+.CodeMirror-lines {
+  background-color: $page-back-color;
+  color: $text-color;
+}
+.CodeMirror-scroll {
+  background-color: $page-back-color;
+}
+.CodeMirror-line {
+  span &::selection {
+    background: $primary-color;
+    color: black;
+  }
+}
+.el-tiptap-edit-image-dialog {
+  @include icr-button;
+  @include icr-input;
+  .el-button--small.is-round {
+    border-radius: 1px;
+  }
+
+}

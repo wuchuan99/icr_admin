@@ -1,0 +1,244 @@
+@import 'vars';
+
+// Breadcrumb
+.el-breadcrumb__item {
+  .el-breadcrumb__inner>a {
+    color: #96B3D2;
+  }
+}
+
+// Input
+.app-main {
+
+  .el-input.is-disabled .el-input__inner,
+  .el-input__inner {
+    background-color: #344871;
+    border: none;
+  }
+
+}
+
+// Textarea
+.app-main {
+  .el-textarea__inner {
+    background-color: #344871;
+    border: none;
+  }
+}
+
+
+// Table
+.app-main {
+  .el-table {
+    font-size: 16px;
+
+    th {
+      background-color: #2c3d60;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    background-color: #1a2845;
+
+    tr {
+      background-color: #1a2845;
+    }
+
+    &::before {
+      height: 0;
+    }
+    .el-table__header-wrapper{
+      border: 1px solid #465E8F;
+    }
+  }
+
+  .el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: #334fac !important;
+  }
+
+  .el-table--striped .el-table__body tr.el-table__row--striped td {
+    background: #2c3d60;
+  }
+
+  .el-table th.is-leaf,
+  .el-table td {
+    border-bottom: none;
+  }
+  .el-table__fixed-header-wrapper {
+    border:1px solid #465E8F; //avue表格样式缺口
+  }
+}
+
+// Pagination
+.app-main {
+  .pagination-container {
+    background: none;
+    color: #CED7F5;
+
+    .el-input__inner {
+      background-color: #2C3D60;
+      border: none;
+    }
+
+    .el-pagination.is-background .el-pager li:not(.disabled) {
+      background-color: #2C3D60;
+    }
+
+    .el-pagination.is-background .el-pager li:not(.disabled).active {
+      background-color: #4E77FF;
+    }
+
+    .el-pagination.is-background .btn-next,
+    .el-pagination.is-background .btn-prev {
+      background-color: #2C3D60;
+    }
+
+    // &.is-background .btn-prev,
+    // .el-pagination.is-background .btn-next,
+    // .el-pagination.is-background .el-pager li {
+    //   background-color: #2d3e60;
+    // }
+
+    // &.is-background .el-pager li:not(.disabled).active {
+    //   background-color: #2d3e60;
+    // }
+
+    // &.is-background .btn-prev,
+    // .el-pagination.is-background .btn-next,
+    // .el-pagination.is-background .el-pager li {
+    //   background-color: #2C3D60;
+    // }
+  }
+}
+
+// Select-dropdown
+body {
+  .el-select-dropdown {
+    background-color: #344871;
+    border: none;
+
+    .popper__arrow::after {
+      border-bottom-color: #344871 !important;
+      border-top: none !important;
+      border-width: 8px !important;
+      left: -2px !important;
+      top: -1px !important;
+    }
+  }
+}
+
+// Dialog
+body {
+  .el-dialog {
+    background-color: $--icr-bg-color-base;
+    padding: 10px 20px;
+    border-top:3px solid #4078FF;
+    box-shadow: 0px 0px 2px #1D2B48;
+    .el-dialog__header {
+      // border-bottom: 1px solid #7795D5;
+      padding:20px 0;
+      .el-dialog__title{
+        border-left: 4px solid #4078FF;
+        padding-left: 10px;
+        font-size: 16px;
+      }
+      // &::before {
+      //   color: #4971F6;
+      //   font-family: 'element-icons' !important;
+      //   content: "\e791";
+      //   font-size: 20px;
+      //   position: absolute;
+      //   top: 30px;
+      //   left: 15px;
+      // }
+    }
+    .el-dialog__header .el-dialog__title {
+      color: $--icr-color-text-regular;
+    }
+    .el-dialog__headerbtn{
+      top:32px
+    }
+    .el-dialog__body{
+      padding: 30px 14px;
+    }
+  }
+}
+
+body {
+  .el-tree {
+    background: #344871;
+  }
+  .el-tree-node__content:hover {
+    background-color: #4971F6 !important;
+  }
+  .el-tree-node.is-current>.el-tree-node__content {
+    color: #409eff;
+    background-color: #4971F6;
+  }
+
+}
+
+// Button
+.app-main {
+  .el-button--default{
+    background-color: transparent;
+    color:#B1C3FF;
+    border:1px solid #B1C3FF;
+  }
+  .el-button {
+    // padding: 10px 25px;
+    border-radius: 6px;
+  }
+
+  .el-button [class*=iconfont]+span{
+    margin-left: 5px;
+  }
+
+  .el-button--medium {
+    font-size: 16px;
+  }
+
+  .el-button--small,
+  .el-button--mini {
+    font-size: 14px;
+  }
+}
+
+//tooltip
+.app-main {
+  .el-tooltip {
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+}
+
+
+body {
+  .el-submenu__icon-arrow {
+    right: 20%;
+    margin-top: -3px;
+    color:#D6EAFF !important;
+  }
+}
+body{
+  .el-tabs__item {
+    color: #D1E5FA;
+  }
+  .el-tabs__nav-wrap::after{
+    background-color: #465E8F;
+  }
+}
+
+// Tag
+body {
+  .el-tag {
+    background-color: $--icr-bg-color-base;
+    border-color: $--icr-border-color-base;
+    color: $--icr-color-text-primary;
+    display: inline-block;
+    .el-tag__close {
+      color: $--icr-color-text-primary;
+    }
+  }
+}

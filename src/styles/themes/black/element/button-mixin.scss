@@ -1,0 +1,102 @@
+@import "./vars";
+$--button-default: rgba(255,255,255,0.10);
+$--button-default-hover: rgba(255,255,255,0.20);
+$--button-primary: #00AD84;
+$--button-primary-hover: #00D3A1;
+
+@mixin icr-button {
+  .el-button {
+    border-radius: 1px;
+    padding: 12px 32px;
+  }
+  .el-button--medium {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .el-button--small {
+    padding: 7px 20px;
+  }
+
+  .el-button--mini {
+    padding: 7px 15px;
+  }
+
+  .el-button--small,
+  .el-button--mini {
+    font-size: 14px;
+  }
+
+  .el-button--default {
+    background-color: $--button-default;
+    color: $--icr-color-text-primary;
+    border-color: rgba($--button-default,0.01);
+    &:hover {
+      background-color: $--button-default-hover;
+      color: $--icr-color-text-primary;
+      border-color: rgba($--button-default,0.01);
+    }
+    &:focus {
+      background-color: $--button-default-hover;
+      color: $--icr-color-text-primary;
+      border-color: rgba($--button-default,0.01);
+    }
+  }
+  .el-button--default.is-disabled,
+  .el-button--default.is-disabled:hover,
+  .el-button--default.is-disabled:focus,
+  .el-button--default.is-disabled:active {
+    background-color: $--button-default;
+    border-color: rgba($--button-default,0.01);
+    opacity: 0.4;
+    color: $--icr-color-text-primary;
+    i {
+      color: $--icr-color-text-primary;
+    }
+  }
+
+  .el-button--primary {
+    background-color: $--button-primary;
+    border-color: $--button-primary;
+    &:hover {
+      background-color: $--button-primary-hover;
+      border-color: $--button-primary-hover;
+    }
+    &:focus {
+      background-color: $--button-primary-hover;
+      border-color: $--button-primary-hover;
+    }
+  }
+  .el-button--primary.is-disabled,
+  .el-button--primary.is-disabled:hover,
+  .el-button--primary.is-disabled:focus,
+  .el-button--primary.is-disabled:active {
+    background-color: $--button-primary;
+    border-color: $--button-primary;
+    opacity: 0.4;
+    color: $--icr-color-text-primary;
+    i {
+      color: $--icr-color-text-primary;
+    }
+  }
+
+  .el-button--text {
+    padding:5px 5px;
+    border-radius: 1px;
+    &:hover {
+     background-color: rgba($--icr-bg-color-focus,.1);
+    }
+    &:focus {
+      background-color: rgba($--icr-bg-color-focus,.1);
+    }
+  }
+  .el-button--text.is-disabled, .el-button--text.is-disabled:focus, .el-button--text.is-disabled:hover, .el-button--text:active {
+    opacity: 0.3;
+    color: $--color-primary;
+  }
+
+  .el-button [class*="iconfont"] + span {
+    margin-left: 5px;
+  }
+
+}

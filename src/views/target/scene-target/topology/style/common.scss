@@ -1,0 +1,31 @@
+// common style for topology editor
+@import "@/styles/themes/black/vars.scss";
+
+.topology-editor {
+  .topology-setting {
+    .icrCollapse_item {
+      width: 100%;
+      padding: 20px 5px;
+      border-bottom: 2px solid $--icr-topology-color-border;
+
+      .item-title {
+        display: block;
+        color: $--icr-topology-color-hover;
+        margin: 0 0 20px 0;
+      }
+
+      .item-content {
+        margin: 0 0 5px 0;
+        line-height: 30px;
+      }
+    }
+
+    .icrCollapse_item:first-child {
+      .item-title {
+        display: block;
+        color: $--icr-topology-color-hover;
+        margin: 20px 0;
+      }
+    }
+  }
+}

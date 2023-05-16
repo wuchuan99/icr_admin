@@ -1,0 +1,41 @@
+@import "../vars";
+@import "./input-mixin.scss";
+
+// input
+.app-main {
+  @include icr-input;
+  // 表单输入框同一宽度
+  .el-form .el-input,.el-form .el-textarea {
+    width: 320px;
+  }
+  .el-form .el-input-number .el-input {
+    width: auto;
+  }
+
+  // 复合输入框
+  .el-input-group--prepend {
+    .el-input-group__prepend {
+      background: $--icr-color-input-primary;
+      border: none;
+      border-right: 1px solid $--icr-color-input-focus;
+      border-radius: 1px 0 0 1px;
+      color: $--icr-color-text-primary;
+    }
+    .el-select .el-input {
+      width: 100px;
+    }
+  }
+  .el-input-group--append {
+    .el-input-group__append {
+      background: $--icr-color-input-primary;
+      border: none;
+      border-left: 1px solid $--icr-color-input-focus;
+      border-radius: 0 1px 1px 0;
+      color: $--icr-color-text-primary;
+    }
+    .el-select .el-input {
+      width: 100px;
+    }
+  }
+}
+

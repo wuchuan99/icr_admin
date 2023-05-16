@@ -1,0 +1,52 @@
+@import "../vars";
+
+body {
+  .el-cascader:not(.is-disabled):hover .el-input__inner {
+    background-color: $--icr-color-input-focus;
+    border: 1px solid transparent;
+  }
+  .el-cascader__tags {
+    .el-tag {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      height: 24px;
+      .el-cascader__tags-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 22px;
+      }
+    }
+    .el-tag.el-tag--info {
+      background: $--icr-color-input-primary;
+      color: $--icr-color-text-primary;
+      > span {
+        line-height: 22px;
+      }
+      .el-tag__close {
+        background-color: rgba($--icr-bg-color-focus,0.5);
+        color: #5f5f61;
+        &:hover {
+          background-color: $--icr-bg-color-focus;
+        }
+      }
+    }
+  }
+  .el-cascader-menu {
+    border-right: 2px solid rgba($--icr-bg-color-focus, 0.05);
+    .el-checkbox__inner {
+      background-color: transparent;
+      border: 1px solid rgba($--icr-color-text-primary,0.2);
+    }
+    .el-checkbox__input.is-disabled .el-checkbox__inner {
+      background-color: rgba($--icr-color-text-primary,0.1);
+      border-color: rgba($--icr-color-text-primary,0.2);
+    }
+    .el-checkbox__inner:after {
+      border-color: $--icr-color-dropdown-primary;
+    }
+  }
+  .el-cascader-node:not(.is-disabled):focus, .el-cascader-node:not(.is-disabled):hover {
+    background: $--icr-color-input-primary;
+  }
+}

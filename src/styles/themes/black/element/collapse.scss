@@ -1,0 +1,12 @@
+@import "../vars";
+
+.app-main {
+  // TODO
+  .el-collapse-item__header {
+    background-color: $--icr-bg-color-base;
+    color: $--icr-color-text-primary;
+  }
+  .el-collapse-item__wrap {
+    background-color: $--icr-bg-color-base;
+  }
+}

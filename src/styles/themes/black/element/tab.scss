@@ -1,0 +1,16 @@
+@import "../vars";
+
+body {
+  .el-tabs__item {
+    color: $--icr-color-text-primary;
+    &.is-disabled {
+      color:$--icr-color-text-regular;
+    }
+  }
+  .el-tabs__nav-wrap::after {
+    background-color: rgba($--icr-color-text-primary,0.1);
+  }
+  .el-tabs__nav-scroll {
+    @import '@/styles/themes/black/customScroll.scss';
+  }
+}

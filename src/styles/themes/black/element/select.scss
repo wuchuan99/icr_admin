@@ -1,0 +1,39 @@
+@import "../vars";
+.el-select {
+  &.readOnly {
+    pointer-events: none;
+    .el-input__suffix {
+      display: none;
+    }
+  }
+  &:hover {
+    .el-input__inner {
+      background-color: $--icr-color-input-focus;
+      border: 1px solid transparent;
+    }
+  }
+  .el-select__tags {
+    .el-tag {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      height: 24px;
+      .el-select__tags-text {
+        color: $--icr-color-text-primary;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 22px;
+      }
+    }
+    .el-tag.el-tag--info {
+      background: $--icr-color-input-primary;
+      .el-tag__close {
+        background-color: rgba($--icr-bg-color-focus,0.5);
+        color: #5f5f61;
+        &:hover {
+          background-color: $--icr-bg-color-focus;
+        }
+      }
+    }
+  }
+}

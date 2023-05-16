@@ -1,0 +1,53 @@
+@import "../vars";
+
+body {
+  .el-popover {
+    padding: 25px 45px;
+    box-shadow: 0px 14px 60px 0px rgba(0,0,0,0.29);
+    .el-table {
+      font-size: 14px;
+      background-color: transparent;
+      tr {
+        background-color: rgba($--icr-color-table-primary, 0.07);
+      }
+      td.el-table__cell {
+        border-bottom: none;
+      }
+      &::before {
+        height: 0;
+      }
+      .cell {
+        padding:0 19px;
+    }
+    }
+    .el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+      background-color: rgba($--icr-color-table-primary, 0.05);
+    }
+    .el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+      background-color: rgba($--icr-color-table-primary, 0.1);
+    }
+  }
+  .el-popover__title {
+    color: $--icr-color-text-primary;
+    margin-bottom: 20px;
+  }
+
+
+  // 表格内popover
+  .table-popover {
+    background: $--icr-bg-color-regular;
+    border: 2px solid rgba($--icr-color-text-primary,0.05);
+    &.el-popper[x-placement^=right] .popper__arrow {
+      border-right-color: $--icr-bg-color-regular;
+    }
+    &.el-popper[x-placement^=right] .popper__arrow:after {
+      border-right-color: $--icr-bg-color-regular;
+    }
+    &.el-popper[x-placement^=left] .popper__arrow {
+      border-right-color: $--icr-bg-color-regular;
+    }
+    &.el-popper[x-placement^=left] .popper__arrow:after {
+      border-right-color: $--icr-bg-color-regular;
+    }
+  }
+}

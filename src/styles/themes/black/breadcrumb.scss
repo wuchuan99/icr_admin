@@ -1,0 +1,38 @@
+@import './vars.scss';
+
+$breadcrumbHeight: 62px;
+
+body {
+  .app-breadcrumb.el-breadcrumb {
+    position: fixed;
+    width: 100%;
+    display: inline-block;
+    height: $breadcrumbHeight;
+    font-size: 14px;
+    line-height: $breadcrumbHeight;
+    background-color: $--icr-bg-color-regular;
+    margin: 0;
+    margin-bottom: 0;
+    padding-left: 24px;
+    border-radius: 6px;
+    z-index: 98;
+    .no-redirect {
+      color: $--icr-color-text-primary;
+      cursor: text;
+    }
+  }
+
+  .app-breadcrumb.el-breadcrumb {
+    margin-top: 0;
+    background: $--icr-bg-color-regular;
+    border-radius: 0;
+    // border-bottom-left-radius: 6px;
+    // border-bottom-right-radius: 6px;
+  }
+
+  .el-breadcrumb__item {
+    .el-breadcrumb__inner > a {
+      color: $--icr-color-text-regular;
+    }
+  }
+}

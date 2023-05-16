@@ -1,0 +1,32 @@
+[
+  {
+    "name": "物理资源1",
+    "id": 1,
+    "img": "/resource/pic/6_653460452.jpg"
+  },
+  {
+    "name": "物理资源2",
+    "id": 2,
+    "img": "/resource/pic/9_656802788.jpg"
+  },
+  {
+    "name": "物理资源3",
+    "id": 3,
+    "img": "/resource/pic/你最棒_3068332563.gif"
+  },
+  {
+    "name": "物理资源4",
+    "id": 3,
+    "img": "/resource/pic/8_656540645.jpg"
+  },
+  {
+    "name": "物理资源5",
+    "id": 3,
+    "img": "/resource/pic/10_713688084.jpg"
+  },
+  {
+    "name": "物理资源6",
+    "id": 3,
+    "img": "/resource/pic/5_658179050.jpg"
+  }
+]

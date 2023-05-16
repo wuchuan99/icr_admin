@@ -1,0 +1,41 @@
+@import "../vars";
+
+$--icr-msg-error:#84464A;
+$--icr-msg-success:#486C47;
+$--icr-msg-warning:#806C42;
+$--icr-msg-info:#585A5E;
+body {
+  .el-message {
+    border-radius: 1px;
+    background-color: $--icr-msg-info;
+    border-color: $--icr-msg-info;
+    .el-message__content {
+      color: $--icr-color-text-primary;
+    }
+    .el-message__icon {
+      font-size: 18px;
+    }
+  }
+
+  .el-message--error {
+    background-color: $--icr-msg-error;
+    border-color: $--icr-msg-error;
+    .el-icon-error {
+      color: rgba($--icr-color-text-primary, .6);
+    }
+  }
+  .el-message--success {
+    background-color: $--icr-msg-success;
+    border-color: $--icr-msg-success;
+    .el-icon-success {
+      color: rgba($--icr-color-text-primary, .6);
+    }
+  }
+  .el-message--warning {
+    background-color: $--icr-msg-warning;
+    border-color: $--icr-msg-warning;
+    .el-icon-warning {
+      color: rgba($--icr-color-text-primary, .6);
+    }
+  }
+}

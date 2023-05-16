@@ -1,0 +1,22 @@
+.topology-editor {
+  .topology-graph {
+    // .x6-graph-svg {
+    //   .x6-graph-svg-viewport {
+    //     .x6-graph-svg-stage {
+    //       .x6-edge {
+    //         &.x6-edge-selected {
+    //           path {
+    //             &:last-of-type {
+    //               stroke: #feb663
+    //             }
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    .x6-widget-transform {
+      border: 1px dashed transparent;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+// 背景
+$--icr-bg-color-base: #202124;
+$--icr-bg-color-regular: #323436;
+$--icr-bg-color-secondary: #323436;
+$--icr-bg-color-focus:#fff;
+
+
+// 字体
+$--icr-color-text-primary: rgba(255,255,255);
+$--icr-color-text-regular: rgba(255,255,255,0.7);
+$--icr-color-text-secondary: #D6EAFF;
+
+
+//Color
+$--color-primary: #00AD84;
+$--color-danger: #ff6067;
+$--color-success: #68BF60;
+$--color-warning: #F6BF53;
+
+// 边框
+$--icr-border-color-base: #7795D5;
+$--icr-border-color-secondary: #38393D;
+
+
+// element resets
+$--color-text-regular: $--icr-color-text-primary;
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+//input
+$--icr-color-input-primary:rgba(255,255,255,0.1);
+$--icr-color-input-focus:rgba(255,255,255,0.2);
+$--icr-color-dropdown-primary:#545557;
+
+//markdown
+$--icr-markdown-bgc-color:#47484A;
+
+//card
+$--icr-card-bg-color:#47494A;
+
+//border
+$--icr-border-color:rgba(255,255,255,0.1);
+
+//topology
+$--icr-topology-color-border: rgba(224, 241, 255, 0.1);
+$--icr-topology-color-text: rgba(255,255,255);
+$--icr-topology-color-hover: rgba(255,255,255,0.6);
+$--icr-topology-color-botton-hover: rgba(255,255,255,1)
+
+
+
+

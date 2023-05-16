@@ -1,0 +1,198 @@
+@import "../vars";
+$--icr-color-table-primary: #fff;
+$--icr-color-table-fixed1: #47494A;
+$--icr-color-table-fixed2: #404244;
+$--icr-color-table-fixedhover: #5B5D5E;
+
+// Table
+.app-main {
+  .el-table {
+    font-size: 14px;
+    background-color: transparent;
+    .el-table__header tr {
+      background-color: transparent;
+      font-size: 14px;
+      font-weight: 400;
+      color: $--icr-color-text-regular;
+      padding: 14px 0;
+      th {
+        background-color: rgba($--icr-color-table-primary, 0.1);
+      }
+    }
+
+    th.el-table__cell.is-leaf,
+    td.el-table__cell {
+      border-bottom: none;
+    }
+
+    tr.el-table__row {
+      background-color: transparent;
+      color: $--icr-color-text-primary;
+      td {
+        background-color: rgba($--icr-color-table-primary, 0.07);
+        padding: 16px 0;
+      }
+      td.el-table__cell {
+        background-color: rgba($--icr-color-table-primary, 0.07);
+        padding: 16px 0;
+      }
+    }
+
+    &::before {
+      height: 0;
+    }
+    .el-table__header-wrapper {
+      // border: 1px solid #465E8F;
+    }
+  }
+
+  .el-table--enable-row-hover .el-table__body tr:hover > td {
+    background-color: rgba($--icr-color-table-primary, 0.2) !important;
+  }
+
+  .el-table--striped .el-table__body tr.el-table__row--striped {
+    background-color: transparent;
+    td {
+      background-color: rgba($--icr-color-table-primary, 0.1);
+    }
+    td.el-table__cell {
+      background-color: rgba($--icr-color-table-primary, 0.1);
+    }
+  }
+
+  .el-table th.is-leaf,
+  .el-table td {
+    border-bottom: none;
+  }
+  .el-table td.el-table__cell {
+    border-bottom: none;
+  }
+  .el-table__fixed-header-wrapper {
+    border: none; //avue表格样式缺口
+  }
+
+  .el-table .el-button {
+    min-width: 74px;
+  }
+  .el-table .el-button--success {
+    background: rgba($--color-success, 0.15);
+    border: 0;
+    color: $--color-success;
+  }
+  .el-table .el-button--warning {
+    background: rgba($--color-warning, 0.15);
+    border: 0;
+    color: $--color-warning;
+  }
+  .el-table thead .el-checkbox {
+    display: none;
+  }
+
+  //table中的tooltoip
+  .el-table .el-tooltip {
+    margin: 0;
+    cursor: auto;
+  }
+
+  // 固定列
+  .el-table__fixed-header-wrapper .el-table__header thead tr th:first-child,
+  .el-table__fixed-header-wrapper .el-table__header thead tr th:last-child
+  {
+    background-color: $--icr-color-table-fixed1;
+  }
+  .el-table__fixed-body-wrapper .el-table__body tbody .el-table__row td:first-child,
+  .el-table__fixed-body-wrapper .el-table__body tbody .el-table__row td:last-child
+  {
+    background-color: $--icr-color-table-fixed2;
+  }
+  .el-table__fixed-body-wrapper .el-table__body tbody .el-table__row.el-table__row--striped td:first-child,
+  .el-table__fixed-body-wrapper .el-table__body tbody .el-table__row.el-table__row--striped td:last-child
+  {
+    background-color: $--icr-color-table-fixed1;
+  }
+  .el-table__fixed::before, .el-table__fixed-right::before {
+    background-color: transparent;
+  }
+  .el-table--enable-row-transition .el-table__body .el-table__row.hover-row > td {
+    background-color: $--icr-color-table-fixedhover !important;
+  }
+  // 固定表头加滚动条
+  .el-table--scrollable-y .el-table__body-wrapper {
+    @import '@/styles/themes/black/customScroll.scss';
+  }
+}
+
+// 操作栏
+.el-table__row td:last-child .el-button {
+  position: relative;
+  min-width: auto;
+  &+.el-button.el-button--text {
+    margin-left: 16px;
+  }
+}
+.el-table__row td:last-child .el-button:last-child {
+  color: $--color-danger;
+  &.is-disabled,
+  &.is-disabled:hover,
+  &.is-disabled:focus,
+  &.is-disabled:active {
+    color: $--color-danger;
+  }
+}
+.el-table__row td:last-child .el-button:nth-child(n + 2)::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 2px;
+  width: 1px;
+  height: 18px;
+  opacity: 0.1;
+  background: $--icr-bg-color-focus;
+}
+
+.el-table__row td:last-child .el-button:nth-child(n + 2).is-disabled::before {
+  opacity: 0.4;
+}
+
+body {
+  // 筛选
+  .el-table__column-filter-trigger {
+    i {
+      color: $--icr-color-text-regular;
+    }
+  }
+  .el-table-filter {
+    background-color:$--icr-color-dropdown-primary;
+    border-color: $--icr-color-dropdown-primary;
+    .el-checkbox__inner {
+      background-color: transparent;
+      border: 1px solid rgba($--icr-color-text-primary,0.2);
+    }
+    .el-checkbox__input.is-disabled .el-checkbox__inner {
+      background-color: rgba($--icr-color-text-primary,0.1);
+      border-color: rgba($--icr-color-text-primary,0.2);
+    }
+    .el-checkbox__inner:after {
+      border-color: $--icr-color-dropdown-primary;
+    }
+  }
+}
+.fixed_table {
+  .el-table__body-wrapper {
+    z-index: 2;
+  }
+  .el-table__body-wrapper::-webkit-scrollbar {
+    height: 8px;
+  }
+  .el-table__body-wrapper::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 4px;
+  }
+  .el-table__body-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba($--icr-bg-color-focus, .4);
+  }
+  .el-table__body-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: rgba($--icr-bg-color-focus, .6);
+  }
+}

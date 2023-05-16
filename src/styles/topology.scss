@@ -1,0 +1,91 @@
+.topology {
+  .x6-widget-stencil {
+    background-color: transparent;
+    padding: 12px 0;
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+    .x6-widget-stencil-title {
+      background-color: transparent;
+      display: none;
+    }
+    .x6-widget-stencil-search {
+      position: relative;
+      padding: 0 10px;
+      input {
+        width: 100%;
+        margin: 0;
+        padding-left: 38px;
+        background-color: #47484A;
+        border: none;
+        border-radius: 4px;
+        color: #E0F1FF;
+        font-size: 14px;
+        &::-webkit-input-placeholder{
+          font-size: 14px;
+          opacity: .4;
+          color: #E0F1FF;
+        }
+      }
+      .sarchIcon {
+        position: absolute;
+        left: 20px;
+        top: 6px;
+        color: #E0F1FF;
+        z-index: 10;
+        font-size: 16px;
+      }
+    }
+    .x6-widget-stencil-content {
+      top: 60px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      .x6-widget-stencil-group {
+        position: relative;
+        > .x6-widget-stencil-group-title  {
+          font-family: MicrosoftYaHei, MicrosoftYaHei-Regular;
+          background-color: transparent;
+          opacity: .6;
+          font-size: 14px;
+          color: #fff;
+          padding: 0 10px;
+          &::before {
+            display: none;
+          }
+        }
+        i {
+          position: absolute;
+          right: 10px;
+          top: 07px;
+          opacity: 0.6;
+          color: #6F7172;
+        }
+        &.collapsed {
+          i {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+  .x6-graph {
+    .x6-widget-selection {
+      .x6-widget-selection-box {
+        box-shadow: none;
+      }
+    }
+  }
+}
+.topologyDialogForm {
+  .el-form {
+    .el-form-item {
+      .el-form-item__content {
+        .el-select {
+          width: 100%;
+        }
+        .el-input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

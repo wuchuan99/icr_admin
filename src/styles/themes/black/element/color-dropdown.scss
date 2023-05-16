@@ -1,0 +1,30 @@
+@import "../vars";
+
+.el-color-dropdown.el-color-picker__panel  {
+  background-color: $--icr-bg-color-regular;
+  border: 2px solid $--icr-border-color-secondary;
+  .el-input__inner {
+    background-color: $--icr-color-input-primary;
+    border: 1px solid transparent;
+  }
+  .el-button--default {
+    background-color: $--button-default;
+    color: $--icr-color-text-primary;
+    border: none;
+    &:hover {
+      background-color: $--button-default-hover;
+      color: $--icr-color-text-primary;
+    }
+    &:focus {
+      background-color: $--button-default-hover;
+      color: $--icr-color-text-primary;
+    }
+  }
+  &.noClear {
+    .el-color-dropdown__btns {
+      .el-color-dropdown__link-btn {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.topology-editor {
+  .el-button--text {
+    color: $--icr-topology-color-text;
+  }
+
+  .el-button--text.is-disabled,
+  .el-button--text.is-disabled:focus,
+  .el-button--text.is-disabled:hover,
+  .el-button--text:active {
+    opacity: 0.3;
+    color: $--icr-topology-color-text;
+  }
+  .el-button--text{
+    i{
+      font-size: 16px;
+    }
+  }
+
+  .el-input-group__append{
+    .el-button--text{
+      padding: 8px 15px;
+      color:$--color-primary;
+    }
+  }
+}

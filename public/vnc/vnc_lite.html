@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--
+    noVNC example: lightweight example using minimal UI and features
+
+    This is a self-contained file which doesn't import WebUtil or external CSS.
+
+    Copyright (C) 2019 The noVNC Authors
+    noVNC is licensed under the MPL 2.0 (see LICENSE.txt)
+    This file is licensed under the 2-Clause BSD license (see LICENSE.txt).
+
+    Connect parameters are provided in query string:
+        http://example.com/?host=HOST&port=PORT&scale=true
+    -->
+  <title>noVNC</title>
+
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css"> -->
+  <link rel="stylesheet" href="../bootstrap-3.4.1-dist/css/bootstrap-select.min.css">
+
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+  <link rel="stylesheet" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      background-color: dimgrey;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    #top_bar {
+      background-color: #6e84a3;
+      color: white;
+      font: bold 12px Helvetica;
+      /* padding: 6px 5px 4px 5px; */
+      height: 25px;
+      /* border-bottom: 1px outset; */
+    }
+
+    #status {
+      position: absolute;
+      left:50%;
+      top:5px;
+      transform: translateX(-50%);
+      display: inline-block;
+      /* text-align: center; */
+    }
+
+    #sendCtrlAltDelButton {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      border: 1px outset;
+      padding: 5px 5px 4px 5px;
+      cursor: pointer;
+    }
+
+    #screen {
+      flex: 1;
+      /* fill remaining space */
+      overflow: hidden;
+    }
+    /* userSeclet css */
+    .bootstrap-select{
+      height: 25px !important;
+      width: 190px !important;
+      margin-left: 5px !important;
+    }
+    .dropdown-toggle {
+      display: inline-block;
+      width: 100% !important;
+      height: 100% !important;
+      font-size: 14px !important;
+      background-color: #EFEFEF !important;
+    }
+    .dropdown-toggle:active{
+      border: none;
+    }
+    .btn{
+      padding: 0px 20px !important;
+      line-height: 25px;
+    }
+    .dropdown-menu{
+      background-color: #EFEFEF !important;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    .dropdown-item:hover,.dropdown-item:active{
+      background-color: #ccc !important;
+    }
+    .dropdown-menu::-webkit-scrollbar {
+      width: 4px;
+    }
+    .dropdown-menu::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+      background: rgba(0,0,0,0.2);
+    }
+   .dropdown-menu::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+      border-radius: 0;
+      background: rgba(0,0,0,0.1)
+    }
+    .bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle,.bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
+      outline: none !important;
+    }
+    .dropdown-menu li a:focus{
+      outline: none !important;
+    }
+  </style>
+  <script type="text/javascript" src="../jquery-1.9.1/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="../bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+  <script>
+    window.Dropdown = $.fn.dropdown
+  </script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script> -->
+  <script type="text/javascript" src="../bootstrap-3.4.1-dist/js/bootstrap-select.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+  <script type="module" crossorigin="anonymous">
+    // RFB holds the API to connect and communicate with a VNC server
+        import RFB from './core/rfb.js';
+
+        let rfb;
+        let desktopName;
+
+        // When this function is called we have
+        // successfully connected to a server
+        function connectedToServer(e) {
+            status("Connected to " + desktopName);
+        }
+
+        // This function is called when we are disconnected
+        function disconnectedFromServer(e) {
+            if (e.detail.clean) {
+                status("Disconnected");
+            } else {
+                status("Something went wrong, connection is closed");
+            }
+        }
+
+        // When this function is called, the server requires
+        // credentials to authenticate
+        function credentialsAreRequired(e) {
+            const password = prompt("Password Required:");
+            rfb.sendCredentials({ password: password });
+        }
+
+        // When this function is called we have received
+        // a desktop name from the server
+        function updateDesktopName(e) {
+            desktopName = e.detail.name;
+        }
+
+        // Since most operating systems will catch Ctrl+Alt+Del
+        // before they get a chance to be intercepted by the browser,
+        // we provide a way to emulate this key sequence.
+        function sendCtrlAltDel() {
+            rfb.sendCtrlAltDel();
+            return false;
+        }
+
+        // Show a status text in the top bar
+        function status(text) {
+            document.getElementById('status').textContent = text;
+        }
+
+        // This function extracts the value of one variable from the
+        // query string. If the variable isn't defined in the URL
+        // it returns the default value instead.
+        function readQueryVariable(name, defaultValue) {
+            // A URL with a query parameter can look like this (But will most probably get logged on the http server):
+            // https://www.example.com?myqueryparam=myvalue
+            //
+            // For privacy (Using a hastag #, the parameters will not be sent to the server)
+            // the url can be requested in the following way:
+            // https://www.example.com#myqueryparam=myvalue&password=secreatvalue
+            //
+            // Even Mixing public and non public parameters will work:
+            // https://www.example.com?nonsecretparam=example.com#password=secreatvalue
+            //
+            // Note that we use location.href instead of location.search
+            // because Firefox < 53 has a bug w.r.t location.search
+            const re = new RegExp('.*[?&]' + name + '=([^&#]*)'),
+                  match = ''.concat(document.location.href, window.location.hash).match(re);
+
+            if (match) {
+                // We have to decode the URL since want the cleartext value
+                return decodeURIComponent(match[1]);
+            }
+
+            return defaultValue;
+        }
+
+        document.getElementById('sendCtrlAltDelButton')
+            .onclick = sendCtrlAltDel;
+
+        // Read parameters specified in the URL query string
+        // By default, use the host and port of server that served this file
+        const host = readQueryVariable('host', window.location.hostname);
+        let port = readQueryVariable('port', window.location.port);
+        const password = readQueryVariable('password');
+        const path = readQueryVariable('path', 'websockify');
+        const wsUrl = readQueryVariable('wsUrl');
+
+
+        // | | |         | | |
+        // | | | Connect | | |
+        // v v v         v v v
+
+        status("Connecting");
+
+        // Build the websocket URL used to connect
+        let url;
+        if (window.location.protocol === "https:") {
+            url = 'wss';
+        } else {
+            url = 'ws';
+        }
+        url += '://' + host;
+        if(port) {
+            url += ':' + port;
+        }
+        url += '/' + path;
+
+        // Creating a new RFB object will start a new connection
+        const wsProtocols = localStorage.getItem('auth_token') ? [`jwt_${localStorage.getItem('auth_token')}`] : []
+        rfb = new RFB(document.getElementById('screen'), url,
+                      { credentials: { password: password }, wsProtocols });
+
+        if(wsUrl) {
+          const ws = new WebSocket(wsUrl)
+          ws.onmessage = e => {
+            let optionList =JSON.parse(e.data)
+            if(optionList.length){
+              $('#userList').show()
+              let selectOption = '';
+              optionList.forEach(item => {
+                selectOption += '<option>'+ item.name +'</option>'
+              })
+              $('#userList').html(selectOption);
+              $('#userList').selectpicker('destroy');
+              $('#userList').selectpicker('render');
+            }else{
+              $('#userList').hide()
+            }
+         }
+        }
+
+        // Add listeners to important events from the RFB module
+        rfb.addEventListener("connect",  connectedToServer);
+        rfb.addEventListener("disconnect", disconnectedFromServer);
+        rfb.addEventListener("credentialsrequired", credentialsAreRequired);
+        rfb.addEventListener("desktopname", updateDesktopName);
+
+        // Set parameters that can be changed on an active connection
+        rfb.viewOnly = !!readQueryVariable('view_only', false);
+        rfb.scaleViewport = readQueryVariable('scale', false);
+
+        // disconnect timeout
+        let timeout = 1000  * 60 * 5
+        let timer = null
+        function countdown() {
+          timer = setTimeout(() => {
+            rfb.disconnect()
+          }, timeout)
+        }
+
+        document.addEventListener('keydown', function() {
+          clearTimeout(timer)
+          countdown()
+        }, true)
+        countdown()
+    </script>
+</head>
+
+<body>
+  <div id="top_bar">
+    <select id="userList" class="selectpicker" data-none-selected-text></select>
+    <div id="status">Loading</div>
+    <div id="sendCtrlAltDelButton">Send CtrlAltDel</div>
+  </div>
+  <div id="screen">
+    <!-- This is where the remote screen will appear -->
+  </div>
+</body>
+
+</html>

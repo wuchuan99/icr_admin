@@ -1,0 +1,167 @@
+@import 'vars';
+@import './navbar.scss';
+$sideBarHeight:30px;
+
+@mixin menu-item() {
+  padding: 0 10% !important;
+  font-size: 14px;
+  // font-weight: 400;
+}
+
+.sidebar {
+    background-color: $--icr-bg-color-base;
+
+    .sidebar-logo-container {
+      height: $headerNavHeight !important;
+      line-height: $headerNavHeight !important;
+      border-bottom: none !important;
+      position: absolute !important;
+      left: 30px !important;
+      background: $--icr-bg-color-base!important;
+    }
+
+    .sidebar-menu {
+      margin-top: $headerNavHeight;
+      border-top: 2px solid $--icr-border-color-secondary;
+      .scrollbar-wrapper {
+        border-right: 2px solid $--icr-border-color-secondary;
+        background-color: $--icr-bg-color-base;
+        padding: 0 8px;
+      }
+    }
+
+    // reset
+    .el-menu {
+        background-color: $--icr-bg-color-base;
+        margin-top:12px;
+        .el-menu-item, .el-submenu {
+            color: $--icr-color-text-regular;
+            background-color: $--icr-bg-color-base;
+            .el-submenu__title {
+                color: $--icr-color-text-regular;
+            }
+        }
+        .el-menu-item {
+          height: $sideBarHeight;
+          line-height: $sideBarHeight;
+        }
+        &>div {
+          &>a {
+            margin-bottom: 15px;
+          }
+        }
+
+        .svg-icon {
+          vertical-align: -0.28em;
+        }
+
+        .sub-el-icon {
+          color: rgba($--icr-color-text-primary,0.4);
+        }
+
+        .is-active > .el-submenu__title .sub-el-icon {
+          color: $--icr-color-text-primary;
+        }
+
+        .el-menu-item:hover {
+            background-color: rgba($--icr-bg-color-focus,0.1) !important;
+            border-radius: 1px;
+        }
+
+        .el-submenu__title {
+            @include menu-item;
+            height: $sideBarHeight;
+            line-height: $sideBarHeight;
+            margin-bottom: 15px;
+            &:hover {
+                background-color: rgba($--icr-bg-color-focus,0.1) !important;
+                border-radius: 1px;
+            }
+            .el-submenu__icon-arrow {
+              right: 20%;
+              margin-top: -3px;
+              color: $--icr-color-text-regular !important;
+            }
+        }
+
+        .el-menu-item {
+          @include menu-item;
+        }
+        .nest-menu .el-menu-item{
+            padding-left: 52px !important;
+            color:$--icr-color-text-regular;
+            background-color: $--icr-bg-color-base;
+            font-size: 14px;
+          }
+          .nest-menu>a {
+            margin-bottom: 15px;
+        }
+
+        .el-menu-item.is-active{
+            color: $--icr-color-text-primary;
+            background-color: rgba($--icr-bg-color-focus,0.1);
+            border-radius: 1px;
+            .sub-el-icon {
+              color: $--icr-color-text-primary;
+            }
+        }
+
+        .nest-menu .router-link-active .el-menu-item {
+          color: $--icr-color-text-primary;
+          background-color: rgba($--icr-bg-color-focus,0.1);
+          border-radius: 1px;
+        }
+    }
+}
+
+// when menu collapsed
+.hideSidebar {
+ .sidebar .scrollbar-wrapper {
+    padding: 0;
+  }
+  .sidebar .el-menu-item {
+    &:hover {
+      background-color: transparent !important;
+      color: $--icr-color-text-primary;
+    }
+    &.is-active {
+      background-color: transparent !important;
+    }
+  }
+  .sidebar .el-menu .el-submenu__title {
+    &:hover {
+      background-color: transparent !important;
+      color: $--icr-color-text-primary;
+    }
+  }
+}
+.el-menu--vertical {
+  &>.el-menu {
+    background-color: $--icr-bg-color-base;
+  }
+  .el-menu--popup {
+    min-width: 128px;
+    padding:12px 4px;
+  }
+  .el-menu-item {
+    height:34px;
+    line-height: 34px;
+  }
+  .el-menu-item.is-active {
+    background-color: rgba($--icr-bg-color-focus,0.1);
+    color: $--icr-color-text-primary;
+  }
+  .nest-menu .el-submenu>.el-submenu__title,
+  .el-menu-item {
+    color: $--icr-color-text-primary;
+    &:hover {
+      // you can use $subMenuHover
+      background-color: rgba($--icr-bg-color-focus,0.1) !important;
+    }
+  }
+  .router-link-active {
+    .el-menu-item {
+        background-color: rgba($--icr-bg-color-focus,0.1);
+    }
+  }
+}

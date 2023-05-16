@@ -1,0 +1,20 @@
+@import "@/styles/themes/black/vars.scss";
+
+//el-input
+.topology-editor {
+  .el-input--mini {
+    .el-input__prefix {
+      left: 10px;
+      color: $--icr-topology-color-hover;
+    }
+  }
+  .el-color-picker__mask {
+    background-color: transparent;
+  }
+  .el-color-picker__trigger { // color-picker
+    border: none;
+  }
+}
+
+
+

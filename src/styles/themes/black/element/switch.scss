@@ -1,0 +1,9 @@
+@import "../vars";
+$--switch-color:#5F6062;
+
+.el-switch {
+  .el-switch__core {
+    border: 1px solid $--switch-color;
+    background: $--switch-color;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../vars";
+
+.app-main {
+  .el-checkbox__inner {
+    background-color: transparent;
+    border: 2px solid rgba($--icr-color-text-primary,0.2);
+    width: 16px;
+    height: 16px;
+  }
+  .el-checkbox__input.is-disabled .el-checkbox__inner {
+    background-color: rgba($--icr-color-text-primary,0.1);
+    border-color: rgba($--icr-color-text-primary,0.2);
+  }
+}

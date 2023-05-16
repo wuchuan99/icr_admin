@@ -1,0 +1,21 @@
+@import "../vars";
+
+body {
+  .el-upload-list--picture-card .el-upload-list__item{
+    border: 1px solid #3D3F40;
+  }
+  .el-upload-list__item.is-success .el-upload-list__item-status-label{
+    display: none;
+  }
+  .el-upload--picture-card {
+    background-color: $--icr-color-input-primary;
+    border: none;
+    border-radius: 1px;
+    .el-icon-plus {
+      color: $--icr-bg-color-focus;
+    }
+  }
+  .el-upload-list__item:hover {
+    background-color: $--icr-color-input-focus;
+  }
+}

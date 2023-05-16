@@ -1,0 +1,182 @@
+@import "@/styles/themes/black/vars.scss";
+$color-text: rgba(255, 255, 255, 0.3);
+
+.topology-editor {
+  .topology-setting {
+    // .el-table {
+    //   font-size: 13px;
+    // }
+    // .el-table .el-table__header tr th {
+    //   padding: 2px 0;
+    //   font-size: 13px !important;
+    //   background: none;
+    // }
+    // .el-table .el-button--text {
+    //   padding: 3px;
+    //   font-size: 13px;
+    // }
+
+    // .el-table tr.el-table__row {
+    //   margin-bottom: 2px;
+    // }
+
+    // .el-table tr.el-table__row td {
+    //   padding: 2px 0;
+    // }
+
+    // .el-table .el-table__body-wrapper > table {
+    //   border-spacing: 0 4px;
+    // }
+
+    // .el-table__row td:last-child .el-button + .el-button.el-button--text {
+    //   margin-left: 0;
+    // }
+
+    // .el-table__row td:last-child .el-button:nth-child(n+2)::before {
+    //   content: none;
+    // }
+
+    // ------------------------
+    .el-table__empty-text{ //暂无数据
+      font-size: 12px;
+      color:$--icr-topology-color-hover;
+    }
+    .el-table .el-table__header tr th { //表头
+        padding: 2px 0;
+        font-size: 12px !important;
+        color: $color-text;
+        background: none;
+      }
+    .el-table th,.el-table td {
+      padding: 0;
+      height: 30px;
+    }
+    .el-table tr.el-table__row td {
+      padding: 0;
+    }
+    .el-table__row td{
+      border-bottom: 3px solid #323436;
+      &:last-child {
+        .last_td {
+          display: flex;
+          .icr_tooltip {
+            flex: 1;
+            overflow: hidden;
+          }
+          .text_buttons {
+            display: none;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+    .el-table__row td:last-child .el-button--text{
+      margin: 0;
+      visibility:hidden;
+      padding: 3px;
+    }
+    .el-table__row td:last-child .el-button--text i{
+      font-size: 16px; //操作按钮
+      color: $--icr-topology-color-botton-hover;
+    }
+    .el-table .cell{
+      line-height: 30px;
+    }
+    .el-table__row:hover{
+      td:last-child{
+        .text_buttons {
+          display: block;
+        }
+        .el-button--text{
+          visibility:visible;
+        }
+      }
+    }
+    // .el-table__row {
+    //   td{
+    //     // border-bottom: 3px solid #323436;
+    //     .cell{
+    //       line-height: 30px;
+    //     }
+    //     &:last-child{
+    //       .el-button--text{
+    //         margin: 0;
+    //         i{
+    //           font-size: 13px; //操作按钮
+    //           color: $--icr-topology-color-hover;
+    //         }
+    //       }
+    //       .el-button--text{
+    //         visibility:visible;
+    //       }
+    //     }
+    //   }
+    //   &:hover{
+    //     &:last-child{
+    //       .el-button--text{
+    //         visibility:visible;
+    //       }
+    //     }
+    //   }
+    // }
+    .el-table__row td:last-child .el-button:nth-child(n+2)::before{
+      display: none;
+    }
+    // .topology-list{
+    //     .thead {
+    //       display: flex;
+    //       .th {
+    //         flex: 1;
+    //         color: $color-text;
+    //         height: 30px;
+    //         line-height: 30px;
+    //       }
+    //       .th_operation {
+    //         width: 46px;
+    //       }
+    //     }
+    //     .tbody {
+    //       .tr {
+    //         display: flex;
+    //         height: 30px;
+    //         line-height: 30px;
+    //         background-color: $--icr-color-input-primary;
+    //         padding: 0 7px;
+    //         margin-bottom: 2px;
+    //         .td {
+    //           flex: 1;
+    //         }
+    //         .td_operation {
+    //           font-size: 12px;
+    //           width: 46px;
+    //           display: flex;
+    //           justify-content: center;
+    //           align-items: center;
+    //           opacity: 0;
+    //           pointer-events: none;
+    //           i {
+    //             cursor: pointer;
+    //             font-size: 13px;
+    //           }
+    //           .el-button--text{
+    //             margin: 0;
+    //           }
+    //         }
+    //         &:hover {
+    //           background-color: $--icr-color-input-focus;
+    //           .td_operation {
+    //             opacity: 0.6;
+    //             pointer-events: all;
+    //           }
+    //         }
+    //       }
+    //     }
+    //     .no_data {
+    //       height: 60px;
+    //       line-height: 60px;
+    //       text-align: center;
+    //       color: $color-text;
+    //     }
+    //   }
+    }
+}

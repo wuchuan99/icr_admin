@@ -1,0 +1,113 @@
+@import "../vars";
+
+.app-main {
+  .pagination-container {
+    background: none;
+    color: $--icr-color-text-regular;
+    padding: 15px 14px !important;
+    background-color: rgba($--icr-bg-color-focus, 0.07);
+    height: 60px;
+
+    .pagination-container {
+      background-color: transparent;
+    }
+
+    .el-pagination {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .el-pagination__total {
+      color: $--icr-color-text-regular;
+    }
+
+    .el-pagination__sizes .el-select .el-input__inner{
+      background-color: $--icr-color-input-primary;
+      &:hover {
+        background-color: $--icr-color-input-focus;
+        border: 1px solid transparent;
+      }
+      &:focus {
+        background-color: $--icr-color-input-focus;
+        border: 1px solid $--color-primary;
+      }
+    }
+
+    // .el-input__inner {
+    //   background-color: $--icr-color-input-primary;
+    //   color: $--icr-color-text-regular;
+    // }
+
+    .el-pagination.is-background .el-pager li:not(.disabled) {
+      background-color: $--icr-color-input-primary;
+    }
+    .el-pagination.is-background .el-pager li:not(.disabled):hover {
+      background-color: $--icr-color-input-focus;
+      color: $--icr-color-text-regular;
+    }
+
+    .el-pagination.is-background .el-pager li:not(.disabled).active {
+      color: $--color-primary;
+      background-color: $--icr-color-input-primary;
+    }
+
+    .el-pager li.btn-quicknext, .el-pager li.btn-quickprev {
+      background-color: transparent !important;
+      color: $--icr-color-text-regular;
+    }
+
+    .el-pagination.is-background .btn-next,
+    .el-pagination.is-background .btn-prev {
+      background: $--icr-color-input-primary;
+      color: $--icr-color-text-regular;
+    }
+    .el-pagination.is-background .btn-next,
+    .el-pagination.is-background .btn-prev {
+      background: $--icr-color-input-primary;
+      color: $--icr-color-text-regular;
+    }
+
+    .el-pagination.is-background .btn-next:hover,
+    .el-pagination.is-background .btn-prev:hover {
+      background-color: $--icr-color-input-focus;
+    }
+
+    .el-pagination.is-background button:disabled:hover {
+      background-color: $--icr-color-input-primary;
+    }
+
+    .el-pagination.is-background .el-pager li {
+      color: $--icr-color-text-regular;
+    }
+    .el-pagination__jump {
+      color: $--icr-color-text-regular;
+    }
+    .el-pagination__jump .el-input__inner {
+      background-color: $--icr-color-input-primary;
+      &:hover {
+        background-color: $--icr-color-input-focus;
+        border: 1px solid transparent;
+      }
+      &:focus {
+        background-color: $--icr-color-input-focus;
+        border: 1px solid $--color-primary;
+      }
+    }
+
+    // &.is-background .btn-prev,
+    // .el-pagination.is-background .btn-next,
+    // .el-pagination.is-background .el-pager li {
+    //   background-color: #2d3e60;
+    // }
+
+    // &.is-background .el-pager li:not(.disabled).active {
+    //   background-color: #2d3e60;
+    // }
+
+    // &.is-background .btn-prev,
+    // .el-pagination.is-background .btn-next,
+    // .el-pagination.is-background .el-pager li {
+    //   background-color: #2C3D60;
+    // }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../vars";
+
+body {
+  .el-autocomplete-suggestion {
+    background-color: $--icr-color-dropdown-primary;
+    border-color: $--icr-color-dropdown-primary;
+    li {
+      color: $--icr-color-text-primary;
+      &:hover {
+        background-color: $--icr-color-input-primary;
+      }
+    }
+  }
+}

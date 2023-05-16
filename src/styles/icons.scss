@@ -1,0 +1,13 @@
+$table_icon:rgba(255,255,255,0.7);
+$search_icon:#fff;
+.tables_icon{
+ color: $table_icon;
+ font-size: 16px;
+ &:hover{
+   color:#4078FF
+ }
+}
+.search_icon{
+  color: $search_icon;
+  font-size: 16px;
+}
